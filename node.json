@@ -1,0 +1,39 @@
+{
+	"category": "Radio",
+	"name": "SimulatedRadio",
+	"inputs": 1,
+	"outputs": 1,
+	"parameters": [
+		{
+			"name": "Mode",
+			"type": "option",
+			"default": "RADIO_MODE_TX_ONLY",
+			"options": [
+				"RADIO_MODE_TX_ONLY",
+				"RADIO_MODE_RX_ONLY"
+			],
+			"value": "RADIO_MODE_TX_ONLY"
+		},
+		{
+			"name": "Payload Length",
+			"type": "raw",
+			"default": "32",
+			"options": [],
+			"value": "32"
+		}
+	],
+	"labels": {
+		"input": ["Transmit"],
+		"output": ["Received"]
+	},
+	"schematic_pins": {
+		"inputs": [
+			1
+		],
+		"outputs": [
+			2
+		]
+	},
+	"repository": "https://github.com/nblocksStudioNodes/nblocks_simulatedradio",
+	"revision": ""
+}
